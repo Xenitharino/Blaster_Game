@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
+    <title>Blaster Game</title>
+    <style>
+        body {
+            background: black;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fixed text-white text-xl ml-2 mt-1 select-none">
+        <span>Score: </span><span id="scoreEl">0</span>
+    </div>
+
+    <div class="fixed text-white ml-2 mt-8 select-none">
+        <span>Xam Blaster Game</span>
+    </div>
+
+    <div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+        <div class="bg-black max-w-md w-full p-6 text-center ring-2 ring-red-500 ring-offset-4 ring-offset-purple-100 rounded-3xl">
+            <h1 class="text-4xl font-bold leading-none text-white" id="bigScoreEl">0</h1>
+            <p class="text-sm text-gray-400 mb-4">Points</p>
+            <div>
+                <button class="bg-red-500 text-white w-full py-2 rounded-full text-sm" id="startGameBtn">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" 
+    integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+</html>
